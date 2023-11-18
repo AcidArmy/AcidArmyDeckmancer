@@ -1,10 +1,22 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
-		"dependencies": {
-			"subclass": [
-				"generic"
-			]
-		}
+		"sources": [
+			{
+				"json": "AADeckmancer",
+				"abbreviation": "DMCR",
+				"full": "Deckmancer",
+				"version": "1.0",
+				"authors": [
+					"AcidArmy"
+				],
+				"convertedBy": [
+					"AcidArmy"
+				]
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
 	},
 	"class": [
 		{
