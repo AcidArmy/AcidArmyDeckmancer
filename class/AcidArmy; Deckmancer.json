@@ -317,7 +317,26 @@
 			"classSource": "AcidArmy",
 			"level": 2,
 			"entries": [
-				""
+				"At 2nd level, you tap into a deep wellspring of Dark Elixir. This Dark Elixir allows you to perform a variety of special actions.",
+				{
+					"type": "refClassFeature",
+					"classFeature": "Dark Elixir|Deckmancer|AcidArmy|2"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Topping Off|Deckmancer|AcidArmy|2"
+				}
+			]
+		},
+		{
+			"name": "Dark Elixir",
+			"source": "AcidArmy",
+			"className": "Deckmancer",
+			"classSource": "AcidArmy",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"You have 2 Dark Elixir, and you gain one additional Dark Elixir every time you level up, to a maximum of 20 at level 20. You can never have more Dark Elixir than shown on the table for your level. You regain all spent Dark Elixir when you finish a long rest."
 			]
 		},
 		{
@@ -329,53 +348,19 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.",
+				"You can use your dark elixir to gain additional elixir, or sacrifice elixir to gain additional dark elixir. You learn other ways to use your dark elixir as you reach higher levels.",
 				{
 					"type": "entries",
-					"name": "Creating Spell Slots",
+					"name": "Converting Dark Elixir into Elixir",
 					"entries": [
-						"You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
-						{
-							"type": "table",
-							"caption": "Creating Spell Slots",
-							"colLabels": [
-								"Spell Slot Level",
-								"Sorcery Point Cost"
-							],
-							"colStyles": [
-								"col-6 text-center",
-								"col-6 text-center"
-							],
-							"rows": [
-								[
-									"1st",
-									"2"
-								],
-								[
-									"2nd",
-									"3"
-								],
-								[
-									"3rd",
-									"5"
-								],
-								[
-									"4th",
-									"6"
-								],
-								[
-									"5th",
-									"7"
-								]
-							]
-						}
+						"You can spend Dark Elixir to refill your elixir as a bonus action on your turn. Each Dark Elixir will net you 2 Elixir."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Converting a Spell Slot to Sorcery Points",
+					"name": "Converting Elixir into Dark Elixir",
 					"entries": [
-						"As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+						"As a bonus action on your turn, you can spend 4 elixir to gain 1 Dark Elixir."
 					]
 				}
 			]
@@ -387,7 +372,8 @@
 			"classSource": "AcidArmy",
 			"level": 3,
 			"entries": [
-				""
+				"At 3rd level, you gain the ability to adjust certain properties of your deck and the cards within on the fly to suit your needs. You gain two of the following Rigged Deck options of your choice. You gain another one at 10th and 17th level.",
+				"You can use only one Rigged Deck option on a card when you play it, unless otherwise noted."
 			]
 		},
 		{
