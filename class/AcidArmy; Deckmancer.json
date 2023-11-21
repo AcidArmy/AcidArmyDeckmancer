@@ -184,7 +184,7 @@
 						"{@filter 4|spells|level=4|class=Deckmancer}",
 						"{@filter 5|spells|level=5|class=Deckmancer}"
 					],
-					"rowsSpellProgression": [
+					"rows": [
 						[1, 1, 0, 0, 0],
 						[1, 1, 0, 0, 0],
 						[2, 1, 0, 0, 0],
@@ -216,27 +216,27 @@
 				},
 				"Dark Elixir Attunement|Deckmancer|AcidArmy|2|AcidArmy",
 				"Rigged Deck|Deckmancer|AcidArmy|3|AcidArmy",
-				"Ability Score Improvement|Deckmancer|AcidArmy|4",
+				"Ability Score Improvement|Deckmancer|AcidArmy|4|AcidArmy",
 				"Meta Shift|Deckmancer|AcidArmy|4|AcidArmy",
 				"Blue King's Guidance|Deckmancer|AcidArmy|5|AcidArmy",
 				{
 					"classFeature": "Deck Archetype feature|Deckmancer|AcidArmy|6|AcidArmy",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Deckmancer|AcidArmy|8",
+				"Ability Score Improvement|Deckmancer|AcidArmy|8|AcidArmy",
 				"Rigged Deck|Deckmancer|AcidArmy|10|AcidArmy",
-				"Ability Score Improvement|Deckmancer|AcidArmy|12",
+				"Ability Score Improvement|Deckmancer|AcidArmy|12|AcidArmy",
 				{
 					"classFeature": "Deck Archetype feature|Deckmancer|AcidArmy|14|AcidArmy",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Deckmancer|AcidArmy|16",
+				"Ability Score Improvement|Deckmancer|AcidArmy|16|AcidArmy",
 				"Rigged Deck|Deckmancer|AcidArmy|17|AcidArmy",
 				{
 					"classFeature": "Deck Archetype feature|Deckmancer|AcidArmy|18|AcidArmy",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Deckmancer|AcidArmy|19",
+				"Ability Score Improvement|Deckmancer|AcidArmy|19|AcidArmy",
 				"Dark Restoration|Deckmancer|AcidArmy|20|AcidArmy"
 			],
 			"subclassTitle": "Deck Archetype",
@@ -251,7 +251,52 @@
 			"classSource": "AcidArmy",
 			"level": 1,
 			"entries": [
-				""
+				"An event in your past, or in the life of a parent or ancestor, imprinted you with the Blue King's Blessing, enabling you to cast cards from a deck of Clashing. This blessing, whatever its cause, permits you access to the art of deckmancy. See {@book chapter 1|AcidArmy|1} for the general rules of cardcasting and {@book chapter 2|AcidArmy|2} for the {@filter deckmancer card list|spells|class=deckmancer}.",
+				{
+					"type": "entries",
+					"name": "Elixir Cost",
+					"entries": [
+						"The Deckmancer table shows how many {@filter cards|spells|class=deckmancer}  of each elixir cost you have in your deck. To cast one of these cards, you must spend its elixir cost or one extra elixir to mirror the card. See {@book chapter 1|AcidArmy|1} for the entry on mirroring a card. You start combat with exactly 2 elixir, and casting a card as a ritual generates and subsequently spends exactly the card's elixir cost.",
+						"For example, if you own the 1-elixir card {@spell ice spirit} and have 2 elixir available, you can cast {@spell ice spirit} using either 1 or 2 elixir."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cards Owned of 1-Elixir and Higher",
+					"entries": [
+						"You own one 1-elixir card of your choice from the {@filter deckmancer card list|spells|class=deckmancer}.",
+						"You gain an additional card of your choice at each level, according to the elixir costs given in the deckmancer table. For instance, when you reach 3rd level in this class, you can gain one new 1-elixir card.",
+						"Additionally, when you gain a level in this class, you can choose one of the cards you own and replace it with another card from the {@filter deckmancer card list|spells|class=deckmancer}, which must be of the same elixir cost."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cardcasting Ability",
+					"entries": [
+						"Wisdom is your cardcasting ability for your cards, since the placement and timing of your cards relies on your ability to recognize situations and respond accordingly. You use your Wisdom whenever a card refers to your cardcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a card you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cardcasting Focus",
+					"entries": [
+						"You can use an {@item playing card set|phb} as a cardcasting focus for your deckmancer cards."
+					]
+				}
 			]
 		},
 		{
@@ -275,6 +320,66 @@
 			]
 		},
 		{
+			"name": "Topping Off",
+			"source": "AcidArmy",
+			"page": 1,
+			"className": "Deckmancer",
+			"classSource": "AcidArmy",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.",
+				{
+					"type": "entries",
+					"name": "Creating Spell Slots",
+					"entries": [
+						"You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
+						{
+							"type": "table",
+							"caption": "Creating Spell Slots",
+							"colLabels": [
+								"Spell Slot Level",
+								"Sorcery Point Cost"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"1st",
+									"2"
+								],
+								[
+									"2nd",
+									"3"
+								],
+								[
+									"3rd",
+									"5"
+								],
+								[
+									"4th",
+									"6"
+								],
+								[
+									"5th",
+									"7"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Converting a Spell Slot to Sorcery Points",
+					"entries": [
+						"As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+					]
+				}
+			]
+		},
+		{
 			"name": "Rigged Deck",
 			"source": "AcidArmy",
 			"className": "Deckmancer",
@@ -291,7 +396,8 @@
 			"classSource": "AcidArmy",
 			"level": 4,
 			"entries": [
-				""
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
@@ -331,7 +437,8 @@
 			"classSource": "AcidArmy",
 			"level": 8,
 			"entries": [
-				""
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
@@ -341,7 +448,7 @@
 			"classSource": "AcidArmy",
 			"level": 10,
 			"entries": [
-				""
+				"At 10th level, you learn an additional rigged deck option."
 			]
 		},
 		{
@@ -351,7 +458,8 @@
 			"classSource": "AcidArmy",
 			"level": 12,
 			"entries": [
-				""
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
@@ -371,7 +479,8 @@
 			"classSource": "AcidArmy",
 			"level": 16,
 			"entries": [
-				""
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
@@ -381,7 +490,7 @@
 			"classSource": "AcidArmy",
 			"level": 17,
 			"entries": [
-				""
+				"At 17th level, you learn an additional rigged deck option."
 			]
 		},
 		{
@@ -401,7 +510,8 @@
 			"classSource": "AcidArmy",
 			"level": 19,
 			"entries": [
-				""
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
