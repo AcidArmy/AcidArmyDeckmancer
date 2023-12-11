@@ -1,0 +1,105 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AcidArmyBookClashing",
+				"abbreviation": "AcidBC",
+				"full": "AcidArmy's Book of Clashing",
+				"authors": [
+					"AcidArmy"
+				],
+				"convertedBy": [
+					"AcidArmy"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"spell": [
+		{
+			"name": "The Log",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Deckmancer",
+						"source": "AcidArmyBookClashing"
+					}
+				]
+			},
+			"entries": [
+				"You conjure up a 5 foot wide rolling log that crashes through a 30 foot line starting at a point in range. Each grounded creature in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 1d10} bludgeoning damage and is knocked {@condition prone} as well as pushed 5 feet in the direction the log is travelling. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone} or pushed. The log then crumbles into nothing."
+			],
+			"source": "AcidArmyBookClashing",
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			],
+			"abilityCheck": [
+				"wisdom"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"fluff": {
+				"entries": [
+					"“A spilt bottle of Rage turned an innocent tree trunk into \"The Log\". Now, it seeks revenge by crushing anything in its path!"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC82N1h6U0tieGUxVm5pUG9iZXZvNS5wbmcifQ:supercell:wTLJjP2Hcbv6hYs9FPz3r6mVXQr06P30xHuONgpl0-U?width=2400"
+						}
+					}
+				]
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d10} for each slot level above 2nd."
+					]
+				}
+			]
+		}
+	]
+}
