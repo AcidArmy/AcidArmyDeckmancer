@@ -1,0 +1,23 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AcidArmyBookClashing",
+				"abbreviation": "AcidBC",
+				"full": "AcidArmy's Book of Clashing",
+				"authors": [
+					"AcidArmy"
+				],
+				"convertedBy": [
+					"AcidArmy"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"monster": [
+		
+	]
+}

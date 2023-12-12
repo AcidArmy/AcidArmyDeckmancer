@@ -100,6 +100,76 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Skeletons",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Deckmancer",
+						"source": "AcidArmyBookClashing"
+					}
+				]
+			},
+			"entries": [
+				"Drawing from your pool of King's Elixir, you conjure three Skeletons surrounding an unoccupied space as close to your target as possible.",
+				"A skeleton summoned by this spell falls into pieces when it drops to 0 hit points, unable to do anything. When the spell ends, or when you exit combat, the skeletons and skeleton remains melt into a puddle of King's Elixir and evaporate in an instant.",
+				"The skeletons are friendly to you and your companions. Roll initiative for the summoned skeletons as a group, which has its own turns. The group attacks hostile creatures on its turn.",
+				"The DM has the skeletons' statistics.",
+				"Evolution (1 Dark Elixir):",
+				"Four Skeletons are conjured, each wearing an ushanka. Each melee attack that hits revives a fallen skeleton comrade."
+			],
+			"source": "AcidArmyBookClashing",
+			"fluff": {
+				"entries": [
+					"“Three fast, very weak melee fighters. Surround your enemies with this pile of bones!”",
+					"“When there's no room in Spooky Town, the dead will walk the Arena! This Evolution is a never-ending horde with each Skeleton summoning another with every attack!”"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9laXBUa0pwRWtXZWNKWTNSVGIxdS5wbmcifQ:supercell:bJBeg5h1GqYJ_lKDVUMBfuztD4Ffxn1VJUGoPmURiYY?width=2400"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9HZlViYjRBSzMzbUg3TEZ4N0pKTi5wbmcifQ:supercell:537JPOiK3Li3TOUpUUjPCt1G76HeIHbmbOo9INOPH4s?width=2400"
+						}
+					}
+				]
+			},
+			"components": {
+				"s": true
+			}
 		}
 	]
 }
